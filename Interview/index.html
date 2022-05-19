@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.dorik.com/62376b1522fcd800110c6626/css/index.css?v=1648363204946"
+    />
+  </head>
+  <body>
+    <section class="dorik-section dorik-section-svnkqbub">
+      <div class="">
+        <div class="container dorik-row-5zel0v8a-wrapper">
+          <div class="dorik-row-5zel0v8a flex">
+            <div class="col-lg-1/1">
+              <div class="column-inner dorik-column-maifrzu6 1/1">
+                <form id="sa6ohdoa" class="dorik-subscription-sa6ohdoa">
+                  <div class="fields-wrapper">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="EMAIL"
+                        class="form-control"
+                        required=""
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <button type="submit">
+                      <span class="loader hidden"
+                        ><svg
+                          viewBox="0 0 100 100"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="vertical-align: middle; height: 2em"
+                        >
+                          <path
+                            fill="#fff"
+                            d="M73 50c0-12.7-10.3-23-23-23S27 37.3 27 50m3.9 0c0-10.5 8.5-19.1 19.1-19.1S69.1 39.5 69.1 50"
+                          >
+                            <animateTransform
+                              attributeName="transform"
+                              attributeType="XML"
+                              type="rotate"
+                              dur="1s"
+                              from="0 50 50"
+                              to="360 50 50"
+                              repeatCount="indefinite"
+                            ></animateTransform>
+                          </path></svg></span
+                      ><span class="button-content">Subscribe</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="dorik-branding">
+      <span>Built with Dorik</span>
+      <a
+        href="mailto:abuse@dorik.io?subject=Abuse Report {WEBSITE_URL}"
+        title="Report Abuse"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="currentColor"
+        >
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M5 16v6H3V3h9.382a1 1 0 0 1 .894.553L14 5h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6.382a1 1 0 0 1-.894-.553L12 16H5zM5 5v9h8.236l1 2H19V7h-6.236l-1-2H5z"
+          /></svg
+      ></a>
+    </div>
+
+    <script>
+      window.DORIK_PROJECT_ID = "62376b1522fcd800110c6626";
+    </script>
+    <script>
+      (function popupButton() {
+        const popupLinks = document.querySelectorAll(`.popup-btn`);
+        popupLinks.forEach((element) => {
+          let popupId = element.getAttribute("href");
+          popupId = popupId.startsWith("#") ? popupId.substring(1) : popupId;
+          element.addEventListener("click", () => {
+            if (!popupId) return;
+            let popupRow = document.getElementById(popupId);
+            let popupOverlayEl =
+              popupRow === null || popupRow === void 0
+                ? void 0
+                : popupRow.parentElement;
+            popupOverlayEl === null || popupOverlayEl === void 0
+              ? void 0
+              : popupOverlayEl.classList.add(`row-${popupId}-overlay`);
+            popupRow === null || popupRow === void 0
+              ? void 0
+              : popupRow.classList.add(`modal-${popupId}-visible`);
+          });
+        });
+      })();
+    </script>
+    <script>
+      (function renderPopupModal({
+        exitIntentPopup = {},
+        onloadPopup = {},
+        EXIT_INTENT,
+        ONLOAD,
+      }) {
+        const modalVisibility = (popupId) => {
+          let popupRow = document.getElementById(popupId);
+          let popupOverlayEl =
+            popupRow === null || popupRow === void 0
+              ? void 0
+              : popupRow.parentElement;
+          popupOverlayEl === null || popupOverlayEl === void 0
+            ? void 0
+            : popupOverlayEl.classList.add(`row-${popupId}-overlay`);
+          popupRow === null || popupRow === void 0
+            ? void 0
+            : popupRow.classList.add(`modal-${popupId}-visible`);
+        };
+
+        document.addEventListener("mouseleave", () => {
+          let interativeModal = localStorage.getItem(
+            `${EXIT_INTENT + "-" + exitIntentPopup.id}`
+          );
+
+          if (exitIntentPopup.id && !interativeModal) {
+            modalVisibility(exitIntentPopup.id);
+          }
+        });
+        window.addEventListener("load", () => {
+          let onloadModal = localStorage.getItem(
+            `${ONLOAD + "-" + onloadPopup.id}`
+          );
+
+          if (onloadPopup.id && !onloadModal) {
+            modalVisibility(onloadPopup.id);
+          }
+        });
+      })({
+        EXIT_INTENT: "EXIT_INTENT",
+        ONLOAD: "ONLOAD",
+        exitIntentPopup: undefined,
+        onloadPopup: undefined,
+      });
+    </script>
+    <script src="https://cdn.dorik.com/common/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+      $("#sa6ohdoa").on("submit", function (e) {
+        e.preventDefault();
+        var that = this;
+        $(this).find(".success-message").remove();
+        $(this).find(".error-message").remove();
+        var data = $(this).serialize();
+        $.ajax({
+          url: "3ajslfwuer3&c=?",
+          method: "POST",
+          data,
+
+          dataType: "jsonp",
+          crossDomain: true,
+          success: function (data) {
+            var msgClass =
+              data.result === "success" ? "success-message" : "error-message";
+            var message =
+              data.result === "success"
+                ? "undefined"
+                : "Something went wrong! Check the fields";
+            var $div = $("<div>", {
+              class: msgClass,
+              html: message,
+            });
+            $(that).append($div);
+          },
+          error: function (error) {
+            var $div = $("<div>", {
+              class: "error-message",
+              html: error.message || "Something went wrong! Check the fields",
+            });
+            $(that).append($div);
+          },
+        });
+      });
+    </script>
+  </body>
+  
+</html>

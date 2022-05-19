@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var num1 = prompt("Enter First Digit: ");
+        // var num2 = prompt("Enter Second Digit: ");
+        // console.log(typeof(num1));
+        // num1 = parseInt(num1, 10);
+        // console.log(typeof(num1));
+        // num2 = parseInt(num2, 10);
+        // var sum;
+        // sum = num1 + num2;
+        // document.write("Summation = " + sum);
+
+        ///Fahrenheit to celsius
+
+        var far = prompt("Enter the value: ");
+        far = parseInt(far, 10);
+        var result = (far - 32 )* 5 / 9;
+        document.write("Celsius = " + result.toFixed(2) + " degree <br/>");
+
+        var cel = prompt("Enter the next value: ");
+        cel = parseFloat(cel, 10);
+        var res = (cel * 9 / 5) + 32;
+        document.write("Fahrenheit = " + res.toFixed(0) + " degrees");
+    </script>
+</html>

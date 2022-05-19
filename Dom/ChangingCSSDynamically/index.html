@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing Style in JavaScript</title>
+
+    <style>
+      .para-style {
+        color: tomato;
+        font-size: 25px;
+        border: 5px dotted grey;
+        padding: 5px;
+        height: 40px;
+        width: 300px;
+        text-align: center;
+        font-style: italic;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>I love my country</h1>
+    <button>Click Me</button>
+    <p>This is a paragraph.</p>
+    <button onclick="addStyle()">add style</button>
+    <button onclick="removeStyle()">remove style</button> -->
+
+    <h2>You have not clicked any button</h2>
+    <button class="my-button">button 1</button>
+    <button class="my-button">button 2</button>
+    <button class="my-button">button 3</button>
+
+    <script>
+
+         var len =  document.querySelectorAll(".my-button").length;
+      for (let i = 0; i < len; i++) {
+        document
+          .querySelectorAll(".my-button")
+          [i].addEventListener("click", function () {
+            const header = document.querySelector("h2");
+            var text = this.innerHTML;
+            header.innerHTML = text + "clicked";
+          });
+      }
+
+      //   const addStyle = () => {
+      //     const paraStyle = document
+      //       .querySelector("p")
+      //       .classList.add("para-style");
+      //   };
+      //   const removeStyle = () => {
+      //     const paraStyle = document
+      //       .querySelector("p")
+      //       .classList.remove("para-style");
+      //   };
+      //   const btn1 = document.querySelectorAll("button")[0];
+      //   btn1.addEventListener("click", () => {
+      //     console.log("first");
+      //     const createDiv = document.createElement("div");
+      //     const createP = document.createElement("p");
+      //     const text = document.createTextNode("There is nothing");
+      //     createP.appendChild(text);
+      //     createDiv.appendChild(createP);
+      //     document.body.appendChild(createDiv);
+      //   });
+
+      //   const heading = document.querySelector("h1");
+      //   heading.addEventListener("mouseover", () => {
+      //     heading.classList.add("para-style");
+      //   });
+      //   heading.addEventListener("mouseout", () => {
+      //     heading.classList.remove("para-style");
+      //   });
+    </script>
+  </body>
+</html>
